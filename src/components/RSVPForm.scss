@@ -1,0 +1,64 @@
+@use 'sass:color';
+@use '@/styles/_variables.scss' as vars;
+
+
+// RSVP container
+.rsvp-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+// Title
+.rsvp-title {
+  font-family: vars.$script-font;
+  font-size: 3rem;
+  color: vars.$primary-color;
+  margin-bottom: 20px;
+}
+
+// Labels and inputs
+.rsvp-label {
+  font-family: vars.$heading-font;
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+}
+
+.rsvp-input,
+.rsvp-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: vars.$body-font;
+}
+
+.rsvp-input:focus,
+.rsvp-textarea:focus {
+  outline: none;
+  border-color: vars.$primary-color;
+  box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+}
+
+// Button
+.rsvp-button {
+  background-color: vars.$primary-color;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: vars.$heading-font;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: color.adjust(vars.$primary-color, $lightness: -10%)
+  }
+}
