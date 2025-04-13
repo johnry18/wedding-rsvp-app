@@ -1,0 +1,38 @@
+.home-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f5f0;
+}
+
+.home-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #6c5ce7;
+    margin-bottom: 20px;
+}
+
+.home-carousel-container {
+    width: 100%;
+    height: 100vh; // Full-screen height
+    overflow: hidden;
+}
+
+.home-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+
+    .carousel-slide {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .carousel-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover; // Ensures the image fills the screen without distortion
+        }
+    }
+}
